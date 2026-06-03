@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student - Student Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Student Management System</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-student.html" class="active">Add Student</a></li>
+                <li><a href="view-students.html">View Students</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Add New Student</h2>
+            
+            <div id="message" class="message"></div>
+            
+            <form id="addStudentForm">
+                <div class="form-group">
+                    <label for="name">Student Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter student name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter email address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="course">Course:</label>
+                    <input type="text" id="course" name="course" required placeholder="Enter course name">
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">Add Student</button>
+                    <button type="reset" class="btn btn-secondary">Clear Form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Student Management System. Simple CRUD Application.</p>
+    </footer>
+
+    <script src="js/add-student.js"></script>
+</body>
+</html>
